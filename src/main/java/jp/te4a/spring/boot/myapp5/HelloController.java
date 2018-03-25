@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.mybootapp4;
+package jp.te4a.spring.boot.myapp5;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,7 +13,7 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index(Model model) {
-        model.addAttribute("msg", "this is  a setting message");
+        //return "this is Spring Boot sample.";
         return "index";
     }
     

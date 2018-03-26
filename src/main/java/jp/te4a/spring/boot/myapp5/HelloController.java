@@ -11,11 +11,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HelloController {
 
-    @RequestMapping("/")
+	@RequestMapping("/")
     public String index(Model model) {
+        model.addAttribute("msg", "this is  a setting message");
         //return "this is Spring Boot sample.";
         return "index";
-    }
+    }    
     
     @RequestMapping(value="/post", method=RequestMethod.POST)
     public ModelAndView postForm(@RequestParam("text1") String text1) {
@@ -23,5 +24,6 @@ public class HelloController {
         mv.addObject("msg", "you write '" + text1 + "'!!!");
         return mv;
     }
+
 
 }

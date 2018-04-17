@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.mybootapp4;
+package jp.te4a.spring.boot.mybootapp5;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
